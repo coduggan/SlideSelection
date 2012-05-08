@@ -15,6 +15,7 @@
 		93EBC271155896C70015BDE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EBC270155896C70015BDE8 /* AppDelegate.m */; };
 		93EBC274155896C70015BDE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EBC273155896C70015BDE8 /* ViewController.m */; };
 		93EBC277155896C70015BDE8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EBC275155896C70015BDE8 /* ViewController.xib */; };
+		93EBC27F155896DD0015BDE8 /* CDKeyboardSelectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EBC27E155896DD0015BDE8 /* CDKeyboardSelectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		93EBC260155896C70015BDE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93EBC262155896C70015BDE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93EBC264155896C70015BDE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		93EBC268155896C70015BDE8 /* CDSlideSelection-Info.plist */ = {isa = PBXFileReference; path = "CDSlideSelection-Info.plist"; sourceTree = "<group>"; };
+		93EBC268155896C70015BDE8 /* CDSlideSelection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDSlideSelection-Info.plist"; sourceTree = "<group>"; };
 		93EBC26A155896C70015BDE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93EBC26C155896C70015BDE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		93EBC26E155896C70015BDE8 /* CDSlideSelection-Prefix.pch */ = {isa = PBXFileReference; path = "CDSlideSelection-Prefix.pch"; sourceTree = "<group>"; };
-		93EBC26F155896C70015BDE8 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		93EBC26E155896C70015BDE8 /* CDSlideSelection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDSlideSelection-Prefix.pch"; sourceTree = "<group>"; };
+		93EBC26F155896C70015BDE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93EBC270155896C70015BDE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93EBC272155896C70015BDE8 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		93EBC272155896C70015BDE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		93EBC273155896C70015BDE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93EBC276155896C70015BDE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		93EBC27D155896DD0015BDE8 /* CDKeyboardSelectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDKeyboardSelectionManager.h; sourceTree = "<group>"; };
+		93EBC27E155896DD0015BDE8 /* CDKeyboardSelectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDKeyboardSelectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		93EBC266155896C70015BDE8 /* CDSlideSelection */ = {
 			isa = PBXGroup;
 			children = (
+				93EBC27D155896DD0015BDE8 /* CDKeyboardSelectionManager.h */,
+				93EBC27E155896DD0015BDE8 /* CDKeyboardSelectionManager.m */,
 				93EBC26F155896C70015BDE8 /* AppDelegate.h */,
 				93EBC270155896C70015BDE8 /* AppDelegate.m */,
 				93EBC272155896C70015BDE8 /* ViewController.h */,
@@ -163,6 +168,7 @@
 				93EBC26D155896C70015BDE8 /* main.m in Sources */,
 				93EBC271155896C70015BDE8 /* AppDelegate.m in Sources */,
 				93EBC274155896C70015BDE8 /* ViewController.m in Sources */,
+				93EBC27F155896DD0015BDE8 /* CDKeyboardSelectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +199,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Connor Duggan (R9E88TJRH6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -208,6 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8142046B-5AAE-4D7E-903D-8F15341FF483";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

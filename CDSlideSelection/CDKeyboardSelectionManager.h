@@ -22,11 +22,23 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
-
-int main(int argc, char *argv[])
+@interface CDKeyboardSelectionManager : NSObject <UITextViewDelegate, UITextFieldDelegate>
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, NSStringFromClass([AppDelegate class]), nil);
-    }
+    CGPoint movementAccumulator;
+    BOOL selectionHasChanged;
 }
+
+@property (retain, nonatomic) NSMutableDictionary * textInputs;
+@property (retain, nonatomic) NSMutableSet * keyboardTouches;
+@property (retain, nonatomic) NSMutableDictionary * keyboardTouchInfo;
+@property (assign, nonatomic) id<UITextInput> activeTextInput;
+
++ (id)sharedManager;
+
+- (void)handleEvent:(UIEvent*)event;
+
+- (void)registerForKeyboardSelection:(id<UITextInput>)textInputs;
+- (void)unregisterForKeyboardSelection:(id<UITextInput>)textInputs;
+
+
+@end
